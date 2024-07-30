@@ -1,0 +1,123 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    await queryInterface.bulkInsert('Employees', [
+      {
+        id: 11,
+        //companyId: '101',
+        name: 'xy',
+        email: 'xy@gamil.com',
+        password: 'ibsr73',
+        type: 'admin',
+        companyId: 6,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      /*{
+        id: 2,
+        //companyId: '101',
+        name: 'Vatsal',
+        email: 'vatsal@gamil.com',
+        password: 'abc456',
+        type: 'employee',
+        companyId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 3,
+        //companyId: '101',
+        name: 'Milind',
+        email: 'milind@gamil.com',
+        password: '223yyz',
+        type: 'employee',
+        companyId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 4,
+        //companyId: '101',
+        name: 'Kenil',
+        email: 'kenil@gamil.com',
+        password: '133xzz',
+        type: 'employee',
+        companyId: 4,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 5,
+        //companyId: '101',
+        name: 'abc',
+        email: 'abc@gamil.com',
+        password: '1qazxs',
+        type: 'admin',
+        companyId: 5,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 6,
+        //companyId: '101',
+        name: 'cde',
+        email: 'cde@gamil.com',
+        password: 'w23edc',
+        type: 'employee',
+        companyId: 6,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 7,
+        //companyId: '101',
+        name: 'efg',
+        email: 'efg@gamil.com',
+        password: 'vfr45t',
+        type: 'employee',
+        companyId: 7,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 8,
+        //companyId: '101',
+        name: 'ghi',
+        email: 'ghi@gamil.com',
+        password: 'gbnhy6',
+        type: 'employee',
+        companyId: 8,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 9,
+        //companyId: '101',
+        name: 'ijk',
+        email: 'ijk@gamil.com',
+        password: '7ujmki',
+        type: 'employee',
+        companyId: 9,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
+      {
+        id: 10,
+        //companyId: '101',
+        name: 'klm',
+        email: 'klm@gamil.com',
+        password: '89olp0',
+        type: 'admin',
+        companyId: 10,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },*/
+    ]);
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('Employees', null, {});
+  }
+};
